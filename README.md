@@ -92,15 +92,19 @@ docker-compose down
 
 ## 🖥️ Lancer l'interface JavaFX
 
-### Méthode recommandée : Exécution depuis Eclipse  
-L'interface graphique peut être lancée directement depuis **l'IDE Eclipse**, ce qui constitue la solution la plus simple :  
-1. **Ouvrir le projet dans Eclipse**  
-2. **Ajouter les bibliothèques requises** :  
-   - Télécharger **JavaFX SDK** depuis [le site officiel](https://openjfx.io/)  
-   - Télécharger le **connecteur MySQL** depuis [le site officiel](https://www.mysql.com/products/connector/)  
-   - Ajouter ces bibliothèques au projet via **Build Path → Configure Build Path → Add External JARs**  
-3. **Sélectionner `Main.java` dans le package `fx`**  
-4. **Cliquer sur "Run"** pour exécuter l’application  
+### Exécution depuis Eclipse  
+L'interface graphique peut être lancée directement depuis **l'IDE Eclipse**, ce qui est pratique pour développer le code de l'application :  
+1. **Créer un nouveau projet Java dans Eclipse**.
+2. **Ajouter le dossier `src/` existant au projet**.  
+   - Faire un clic droit sur le projet nouvellement créé dans **Project Explorer**
+   - Sélectionner **Properties → Java Build Path → Source**
+   - Cliquer sur **Add Folder...**, sélectionner le dossier existant [`src/`](src/) et cliquer sur **Apply and Close** 
+3. **Ajouter les bibliothèques requises** :  
+   - Télécharger **JavaFX SDK** depuis [le site officiel](https://openjfx.io/)
+   - Télécharger le **connecteur MySQL** depuis [le site officiel](https://www.mysql.com/products/connector/)
+   - Ajouter ces bibliothèques au projet via **Build Path → Configure Build Path → Add External JARs**
+4. **Sélectionner `Main.java` dans le package `fx`**.
+5. **Cliquer sur "Run"** pour exécuter l’application.
 
 
 ### Exécution depuis le terminal  
@@ -112,7 +116,7 @@ java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx
 ---
 
 ## 📖 Consultation des documentations
-Deux rapports détaillés du projet sont disponibles :  
+Un rapport détaillé du projet est disponible:  
 
 **Version française** : [Lire le rapport en français](rapport_gestion_reservations.pdf)  
 **Version anglaise** : [Read the report in English](English_version/reservations_management_report.pdf)  
