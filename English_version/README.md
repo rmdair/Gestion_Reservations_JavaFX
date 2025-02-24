@@ -63,4 +63,58 @@ src/                    → Project source code
 │   ├── Main.java       → Main application class
 
 executable.jar          → Executable file to launch the application
+```
 
+---
+
+## Docker Commands
+
+**Start the MySQL database**
+
+```bash
+docker-compose up -d
+```
+
+**Access MySQL inside the container** 
+```bash
+docker exec -it project_travel_agency mysql -u project_travel_agency -p      
+```
+or
+```bash
+docker exec -it project_travel_agency mysql -u root -p
+```
+
+**Stop and remove the container**  
+```bash
+docker-compose down
+```
+
+---
+
+
+## 🖥️ Launching the JavaFX Interface
+
+### Running from Eclipse  
+The graphical interface can be launched directly from **Eclipse IDE**, which is practical if one wants to develop the application's code:  
+
+1. **Create a new Java project in Eclipse**
+    
+2. **Add the existing `src/` directory to the project**  
+   - Right-click on the newly created project in **Project Explorer**  
+   - Select **Properties → Java Build Path → Source**  
+   - Click **Add Folder...**, select the existing [`src/`](../src/) directory, and click **Apply and Close**  
+
+3. **Add the required libraries**:  
+   - Download **JavaFX SDK** from [the official website](https://openjfx.io/)  
+   - Download the **MySQL connector** from [the official website](https://www.mysql.com/products/connector/)  
+   - Add these libraries to the project via **Build Path → Configure Build Path → Add External JARs**  
+
+4. **Select `Main.java` in the `fx` package**  
+
+5. **Click "Run"** to launch the application  
+
+### Running from the Terminal  
+The application can also be executed outside the IDE using the following command:  
+```bash
+java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
+```
