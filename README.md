@@ -2,8 +2,6 @@
   <h1> Gestion des Réservations - Agence de Voyage</h1>
 </div>
 
-![MCD](Modele_Conceptuel_Donnees.png)
-
 ## Introduction
 
 Cette application JavaFX est conçue comme **un espace de travail dédié aux conseillers** d'une agence de voyage.  
@@ -12,6 +10,15 @@ Elle leur permet de gérer facilement les réservations des clients, en accédan
 L’application repose sur une **base de données MySQL** et offre un accès différencié :  
 - **Les conseillers** gèrent uniquement les clients et leurs réservations.  
 - **L’administration** contrôle les vols, compagnies et conseillers de l'agence de voyage.  
+
+## Modèle Conceptuel de Données (MCD)
+
+Voici la structure des entités principales du projet :
+
+![MCD](Modele_Conceptuel_Donnees.png)
+
+Les réservations forment l’élément central du modèle, reliées aux clients, conseillers et vols via des clés étrangères.
+Chaque réservation est associée à un client qui l’effectue, un conseiller qui la gère et un vol correspondant.
 
 ## Fonctionnalités
 
