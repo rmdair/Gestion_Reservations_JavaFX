@@ -118,3 +118,44 @@ The application can also be executed outside the IDE using the following command
 ```bash
 java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
 ```
+
+---
+
+## 📖 Documentation
+One detailed report about the project is available:
+
+**French Version** : [Lire le rapport en français](../rapport_gestion_reservations.pdf)  
+**English Version** : [Read the report in English](reservations_management_report.pdf)  
+
+---
+
+## 📸 Application Overview
+
+### Clients Tab
+![Accueil](../pictures/update_client.png)
+
+### Reservations Tab  
+![Réservations](../pictures/update_reservation.png)
+
+### Flights Tab 
+![Vols](../pictures/flights.png)
+
+### Airlines Tab  
+![Compagnies](../pictures/airlines.png)
+
+### Travel Agents Tab  
+![Conseillers](../pictures/travel_agents.png)
+
+### Excel Overview  
+![Excel](../pictures/excel_window.png)
+
+---
+
+
+**Clone and Run the Project**  
+```bash
+git clone https://github.com/rmdair/Gestion_Reservations_JavaFX.git
+```
+```bash
+cd Gestion_Reservations_JavaFX
+```
