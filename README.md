@@ -94,13 +94,20 @@ L'interface graphique peut être lancée directement depuis **l'IDE Eclipse**, c
 3. **Sélectionner `Main.java` dans le package `fx`**  
 4. **Cliquer sur "Run"** pour exécuter l’application  
 
----
 
 ### Exécution depuis le terminal  
 L’application peut également être exécutée en dehors de l’IDE avec la commande suivante :  
 ```bash
 java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
 ```
+
+---
+
+## 📖 Consultation des documentations
+Deux rapports détaillés du projet sont disponibles :  
+
+**Version française** : [Lire le rapport en français](rapport_gestion_reservations.pdf)  
+**Version anglaise** : [Read the report in English](English_version/reservations_management_report.pdf)  
 
 ---
 
