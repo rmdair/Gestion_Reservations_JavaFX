@@ -95,7 +95,8 @@ docker-compose down
 ## 🖥️ Launching the JavaFX Interface
 
 ### Running from Eclipse  
-The graphical interface can be launched directly from **Eclipse IDE**, which is practical if one wants to develop the application's code:  
+**Eclipse IDE** is a powerful and widely used integrated development environment for Java programming.
+The graphical interface can be launched directly from Eclipse, which is practical if one wants to develop the application's code:  
 
 1. **Create a new Java project in Eclipse**
     
