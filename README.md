@@ -93,7 +93,8 @@ docker-compose down
 ## 🖥️ Lancer l'interface JavaFX
 
 ### Exécution depuis Eclipse  
-L'interface graphique peut être lancée directement depuis **l'IDE Eclipse**, ce qui est pratique pour développer le code de l'application :  
+**Eclipse IDE** est un environnement de développement intégré puissant et très utilisé pour la programmation en Java.
+L'interface graphique peut être lancée directement depuis Eclipse, ce qui est pratique pour développer le code de l'application :  
 1. **Créer un nouveau projet Java dans Eclipse**.
 2. **Ajouter le dossier `src/` existant au projet**.  
    - Faire un clic droit sur le projet nouvellement créé dans **Project Explorer**
@@ -146,7 +147,7 @@ Un rapport détaillé du projet est disponible:
 ---
 
 
-**Pour cloner et démarrer ce projet**  
+**Pour cloner et démarrer ce projet :**  
 ```bash
 git clone https://github.com/rmdair/Gestion_Reservations_JavaFX.git
 ```
