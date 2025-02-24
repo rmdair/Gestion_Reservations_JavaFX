@@ -23,10 +23,10 @@ Chaque réservation est associée à un client qui l’effectue, un conseiller q
 ## Fonctionnalités
 
 Les conseillers peuvent :  
-- **Ajouter, modifier ou annuler une réservation** pour un client  
-- **Consulter les vols disponibles** et les compagnies opératrices  
-- **Accéder à une vue globale des réservations sous format Excel**  
-- **Gérer les clients et suivre leur historique de voyage**  
+- Ajouter, modifier ou annuler une réservation pour un client. 
+- Consulter les vols disponibles et les compagnies opératrices. 
+- Accéder à une vue globale des réservations sous format Excel. 
+- Gérer les clients et suivre leur historique de voyage. 
 
 ---
 
@@ -121,7 +121,7 @@ Deux rapports détaillés du projet sont disponibles :
 
 ## 📸 Aperçu de l'Application
 
-### Interface d’accueil  
+### Onglet des clients  
 ![Accueil](pictures/update_client.png)
 
 ### Onglet des réservations  
