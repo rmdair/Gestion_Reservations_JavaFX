@@ -2,7 +2,7 @@
   <h1> Travel Agency Reservation Management</h1>
 </div>
 
-## Introduction
+## Overview
 
 This JavaFX application is designed as **a dedicated workspace for travel agency staff**.  
 It allows them to easily manage client reservations while accessing pre-filled flight and airline information, which is updated by the administration.  
