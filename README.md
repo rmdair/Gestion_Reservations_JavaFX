@@ -2,7 +2,7 @@
   <h1> Gestion des Réservations - Agence de Voyage</h1>
 </div>
 
-## Introduction
+## Description
 
 Cette application JavaFX est conçue comme **un espace de travail dédié aux conseillers** d'une agence de voyage.  
 Elle leur permet de gérer facilement les réservations des clients, en accédant aux informations préremplies sur les vols et compagnies aériennes, qui sont mises à jour par l'administration.  
