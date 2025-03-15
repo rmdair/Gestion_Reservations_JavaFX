@@ -35,7 +35,7 @@ Travel agents can:
 ```plaintext
 docker/                 → MySQL container configuration
 ├── docker-compose.yml  → Database deployment
-├── initialization.sql  → SQL initialization script
+├── initialization.sql  → Fictitious SQL initialization script for testing
 
 src/                    → Project source code
 ├── config/             → MySQL connection management
