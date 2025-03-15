@@ -35,7 +35,7 @@ Les conseillers peuvent :
 ```plaintext
 docker/                → Configuration du conteneur MySQL
 ├── docker-compose.yml → Déploiement de la base de données
-├── initialization.sql  → Script d'initialisation SQL
+├── initialization.sql  → Script d'initialisation SQL fictif pour tests
 
 src/                   → Code source du projet
 ├── config/            → Gestion de la connexion MySQL
