@@ -154,3 +154,6 @@ git clone https://github.com/rmdair/Gestion_Reservations_JavaFX.git
 ```bash
 cd Gestion_Reservations_JavaFX
 ```
+```bash
+java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
+```
