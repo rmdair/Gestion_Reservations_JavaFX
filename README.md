@@ -124,7 +124,7 @@ Un rapport détaillé du projet est disponible:
 
 ---
 
-## 📸 Aperçu de l'Application
+## 📸 Aperçu de l'application
 
 ### Onglet des clients  
 ![Accueil](pictures/update_client.png)
