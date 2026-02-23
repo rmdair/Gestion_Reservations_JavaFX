@@ -11,7 +11,7 @@ Elle leur permet de gérer facilement les réservations des clients, en accédan
 
 L’application repose sur une **base de données MySQL** et offre un accès différencié :  
 - **Les conseillers** gèrent uniquement les clients et leurs réservations.  
-- **L’administration** contrôle les vols, compagnies et conseillers de l'agence de voyage.  
+- **L’administration** gère les vols, les compagnies aériennes et les conseillers.  
 
 ## Fonctionnalités
 
