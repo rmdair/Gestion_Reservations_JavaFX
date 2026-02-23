@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> Gestion des Réservations - Agence de Voyage</h1>
+  <h1> Gestion des réservations - Agence de voyage</h1>
 </div>
 
 ![MCD](Modele_Conceptuel_Donnees.png)
@@ -7,7 +7,7 @@
 ## Introduction
 
 Cette application JavaFX est conçue comme **un espace de travail dédié aux conseillers** d'une agence de voyage.  
-Elle leur permet de gérer facilement les réservations des clients, en accédant aux informations préremplies sur les vols et compagnies aériennes, qui sont mises à jour par l'administration.  
+Elle leur permet de gérer facilement les réservations des clients, en accédant aux informations préremplies sur les vols et compagnies aériennes, mises à jour par l'administration.  
 
 L’application repose sur une **base de données MySQL** et offre un accès différencié :  
 - **Les conseillers** gèrent uniquement les clients et leurs réservations.  
