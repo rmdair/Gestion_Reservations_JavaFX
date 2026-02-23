@@ -85,7 +85,7 @@ docker-compose down
 
 ## 🖥️ Lancer l'interface JavaFX
 
-### Méthode recommandée : Exécution depuis Eclipse  
+### Méthode recommandée : exécution depuis Eclipse  
 L'interface graphique peut être lancée directement depuis **l'IDE Eclipse**, ce qui constitue la solution la plus simple :  
 1. **Ouvrir le projet dans Eclipse**  
 2. **Ajouter les bibliothèques requises** :  
@@ -112,7 +112,7 @@ Deux rapports détaillés du projet sont disponibles :
 
 ---
 
-## 📸 Aperçu de l'Application
+## 📸 Aperçu de l'application
 
 ### Interface d’accueil  
 ![Accueil](pictures/update_client.png)
