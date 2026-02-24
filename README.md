@@ -1,13 +1,15 @@
 <div align="center">
-  <h1> Gestion des réservations - Agence de voyage</h1>
-</div>
+  <h1>Gestion des réservations – Agence de voyage</h1>
+</div>      
+
+&nbsp;
 
 ## Introduction
 
-Cette application JavaFX est conçue comme **un espace de travail dédié aux conseillers** d'une agence de voyage.  
-Elle leur permet de gérer facilement les réservations des clients, en accédant aux informations préremplies sur les vols et compagnies aériennes, mises à jour par l'administration.  
+Cette application JavaFX est conçue comme un espace de travail dédié aux conseillers d'une agence de voyage.  
+Elle leur permet de gérer facilement les réservations des clients, en accédant aux informations préremplies sur les vols et les compagnies aériennes, mises à jour par l'administration.  
 
-L’application repose sur une **base de données MySQL** et offre un accès différencié :  
+L’application repose sur une **base de données MySQL relationnelle** et offre un accès différencié :  
 - **Les conseillers** gèrent uniquement les clients et leurs réservations.  
 - **L’administration** gère les vols, les compagnies aériennes et les conseillers.
 
@@ -17,16 +19,16 @@ Voici la structure des principales entités du projet :
 
 ![MCD](Modele_Conceptuel_Donnees.png)
 
-Les réservations constituent l’élément central du modèle. 
-Chaque réservation est associée à un client qui l’effectue, à un conseiller qui la gère, ainsi qu’à un vol correspondant.
+Les réservations constituent l'élément central du modèle. 
+Chaque réservation est associée à un client qui l'effectue, à un conseiller qui la gère, ainsi qu’à un vol correspondant.
 
 ## Fonctionnalités
 
 Les conseillers peuvent :  
 - **Ajouter, modifier ou annuler une réservation** pour un client  
 - **Consulter les vols disponibles** et les compagnies opératrices  
-- **Accéder à une vue globale des réservations sous format Excel**  
-- **Gérer les clients et suivre leur historique de voyage**  
+- **Accéder à une vue globale des réservations** au format Excel  
+- **Gérer les clients** et suivre leur historique de voyage  
 
 ---
 
@@ -35,7 +37,7 @@ Les conseillers peuvent :
 ```plaintext
 docker/                → Configuration du conteneur MySQL
 ├── docker-compose.yml → Déploiement de la base de données
-├── initialization.sql  → Script d'initialisation SQL
+├── initialization.sql → Script d'initialisation SQL
 
 src/                   → Code source du projet
 ├── config/            → Gestion de la connexion MySQL
@@ -62,7 +64,7 @@ src/                   → Code source du projet
 │   ├── ExcelViewFX.java
 │   ├── Main.java      → Classe principale
 
-executable.jar         → Fichier exécutable pour lancer l’application
+executable.jar         → Fichier exécutable pour lancer l'application
 ```
 
 ---
@@ -100,18 +102,18 @@ L'interface graphique peut être lancée directement depuis **l'IDE Eclipse**, c
    - Télécharger le **connecteur MySQL** depuis [le site officiel](https://www.mysql.com/products/connector/)  
    - Ajouter ces bibliothèques au projet via **Build Path → Configure Build Path → Add External JARs**  
 3. **Sélectionner `Main.java` dans le package `fx`**  
-4. **Cliquer sur "Run"** pour exécuter l’application  
+4. **Cliquer sur Run** pour exécuter l'application  
 
 
 ### Exécution depuis le terminal  
-L’application peut également être exécutée en dehors de l’IDE avec la commande suivante :  
+L'application peut également être exécutée en dehors de l'IDE avec la commande suivante :  
 ```bash
 java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
 ```
 
 ---
 
-## 📖 Consultation des documentations
+## 📖 Documentation
 Deux rapports détaillés du projet sont disponibles :  
 
 **Version française** : [Lire le rapport en français](rapport_gestion_reservations.pdf)  
@@ -121,7 +123,7 @@ Deux rapports détaillés du projet sont disponibles :
 
 ## 📸 Aperçu de l'application
 
-### Interface d’accueil  
+### Interface d'accueil  
 ![Accueil](pictures/update_client.png)
 
 ### Onglet des réservations  
@@ -145,7 +147,6 @@ Deux rapports détaillés du projet sont disponibles :
 **Pour cloner et démarrer ce projet**  
 ```bash
 git clone https://github.com/rmdair/Gestion_Reservations_JavaFX.git
-```
-```bash
+
 cd Gestion_Reservations_JavaFX
 ```
