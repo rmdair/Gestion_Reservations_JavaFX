@@ -1,12 +1,15 @@
 <div align="center">
   <h1>Booking Management – Travel Agency</h1>
+  &nbsp;
 
 ![Language](https://img.shields.io/badge/Language-Java_23-d2b48c?style=for-the-badge&logo=openjdk&logoColor=white) 
 ![Database](https://img.shields.io/badge/Database-MySQL-00618E?style=for-the-badge&logo=mysql&logoColor=white) 
 ![Infrastructure](https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 </div>
 
-<div style="height: 5px;"></div>
+<p align="center">
+  <img src="../assets/banner.webp" alt="Banner" width="60%">
+</p>
 
 ## Overview
 
@@ -17,7 +20,7 @@ The application is based on a **MySQL database** and offers different levels of 
 - **Travel consultants** manage clients and their bookings only.  
 - **The administration** manages flights, airlines, and agency staff.  
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## Download
 
@@ -29,7 +32,7 @@ You can download the stable, ready-to-use version here:
   </a>
 </p>
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## Conceptual Data Model (CDM)
 
@@ -42,7 +45,7 @@ Here is the structure of the project's main entities:
 Bookings are the central element of the model.  
 Each of them is associated with the client who makes the booking, the travel consultant who manages it, and the corresponding flight.
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## Features
 
@@ -52,7 +55,7 @@ Travel consultants can:
 - Access a consolidated view of bookings in Excel format.  
 - Manage clients and track their travel history.  
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## 📂 Project Structure
 
@@ -87,7 +90,7 @@ src/                    → Project source code
 │   ├── Main.java       → Main application entry point
 ```
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## Docker Commands
 
@@ -110,7 +113,7 @@ docker exec -it project_travel_agency mysql -u root -p
 ```bash
 docker-compose down
 ```
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## 🖥️ Launching the JavaFX Interface
 
@@ -134,8 +137,7 @@ The graphical interface can be launched directly from Eclipse, which is ideal to
 
 5. **Click Run** to launch the application  
 
-<div style="height: 5px;"></div>
-
+&nbsp;
 
 ### Running from the Terminal  
 The application can also be executed outside the IDE using the following command:  
@@ -143,8 +145,7 @@ The application can also be executed outside the IDE using the following command
 java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
 ```
 
-<div style="height: 5px;"></div>
-
+&nbsp;
 
 ## 📖 Documentation
 One detailed report about the project is available:
@@ -153,43 +154,41 @@ One detailed report about the project is available:
 **French Version** : [Lire le rapport en français](../docs/rapport_gestion_reservations.pdf)  
 
 
-<div style="height: 5px;"></div>
-
+&nbsp;
 
 ## 📸 Application Overview
 
 ### Clients Tab
 <p align="center">
-  <img src="../assets/update_client.png" alt="Clients Tab" width="80%">
+  <img src="../assets/update_client.webp" alt="Clients Tab" width="80%">
 </p>
 
 ### Bookings Tab
 <p align="center">
-  <img src="../assets/update_reservation.png" alt="Bookings Tab" width="80%">
+  <img src="../assets/update_reservation.webp" alt="Bookings Tab" width="80%">
 </p>
 
 ### Flights Tab
 <p align="center">
-  <img src="../assets/flights.png" alt="Flights Tab" width="80%">
+  <img src="../assets/flights.webp" alt="Flights Tab" width="80%">
 </p>
 
 ### Airlines Tab
 <p align="center">
-  <img src="../assets/airlines.png" alt="Airlines Tab" width="80%">
+  <img src="../assets/airlines.webp" alt="Airlines Tab" width="80%">
 </p>
 
 ### Travel Consultants Tab
 <p align="center">
-  <img src="../assets/travel_agents.png" alt="Travel Consultants Tab" width="80%">
+  <img src="../assets/travel_agents.webp" alt="Travel Consultants Tab" width="80%">
 </p>
 
 ### Excel Overview
 <p align="center">
-  <img src="../assets/excel_window.png" alt="Excel Overview" width="80%">
+  <img src="../assets/excel_window.webp" alt="Excel Overview" width="80%">
 </p>
 
-<div style="height: 5px;"></div>
-
+&nbsp;
 
 ## Clone and Launch the project
 

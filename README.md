@@ -1,12 +1,15 @@
 <div align="center">
   <h1>Gestion des réservations – Agence de voyage</h1>
+  &nbsp;
 
 ![Langage](https://img.shields.io/badge/Langage_-Java_23-d2b48c?style=for-the-badge&logo=openjdk&logoColor=white) 
 ![Base de données](https://img.shields.io/badge/Base_de_données-MySQL-00618E?style=for-the-badge&logo=mysql&logoColor=white) 
 ![Infrastructure](https://img.shields.io/badge/Conteneur-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 </div>      
 
-<div style="height: 5px;"></div>
+<p align="center">
+  <img src="assets/banner.webp" alt="Banner" width="60%">
+</p>
 
 ## Introduction
 
@@ -17,7 +20,7 @@ L’application repose sur une **base de données MySQL relationnelle** et offre
 - **Les conseillers** gèrent uniquement les clients et leurs réservations.  
 - **L’administration** gère les vols, les compagnies aériennes et les conseillers.
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## Téléchargement
 
@@ -29,7 +32,7 @@ Vous pouvez télécharger la version stable prête à l'emploi ici :
   </a>
 </p>
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## Modèle conceptuel de données (MCD)
 
@@ -42,7 +45,7 @@ Voici la structure des principales entités du projet :
 Les réservations constituent l'élément central du modèle. 
 Chacune d'entre elles est associée au client qui l'effectue, au conseiller qui la gère, ainsi qu’au vol correspondant.
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## Fonctionnalités
 
@@ -52,8 +55,7 @@ Les conseillers peuvent :
 - Accéder à une vue globale des réservations au format Excel  
 - Gérer les clients et suivre leur historique de voyage  
 
-<div style="height: 5px;"></div>
-
+&nbsp;
 
 ## 📂 Arborescence du projet 
 
@@ -88,7 +90,7 @@ src/                   → Code source du projet
 │   ├── Main.java      → Classe principale
 ```
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## Commandes Docker
 
@@ -111,7 +113,7 @@ docker exec -it project_travel_agency mysql -u root -p
 docker-compose down
 ```
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## 🖥️ Lancer l'interface JavaFX
 
@@ -132,7 +134,7 @@ L'application peut également être exécutée en dehors de l'IDE avec la comman
 java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
 ```
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## 📖 Documentation
 Deux rapports détaillés du projet sont disponibles :  
@@ -140,41 +142,41 @@ Deux rapports détaillés du projet sont disponibles :
 **Version française** : [Lire le rapport en français](docs/rapport_gestion_reservations.pdf)  
 **Version anglaise** : [Read the report in English](English_version/docs/reservations_management_report.pdf)  
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## 📸 Aperçu de l'application
 
 ### Interface d'accueil
 <p align="center">
-  <img src="assets/update_client.png" alt="Accueil" width="80%">
+  <img src="assets/update_client.webp" alt="Accueil" width="80%">
 </p>
 
 ### Onglet des réservations
 <p align="center">
-  <img src="assets/update_reservation.png" alt="Réservations" width="80%">
+  <img src="assets/update_reservation.webp" alt="Réservations" width="80%">
 </p>
 
 ### Onglet des vols
 <p align="center">
-  <img src="assets/flights.png" alt="Vols" width="80%">
+  <img src="assets/flights.webp" alt="Vols" width="80%">
 </p>
 
 ### Onglet des compagnies aériennes
 <p align="center">
-  <img src="assets/airlines.png" alt="Compagnies" width="80%">
+  <img src="assets/airlines.webp" alt="Compagnies" width="80%">
 </p>
 
 ### Onglet des conseillers
 <p align="center">
-  <img src="assets/travel_agents.png" alt="Conseillers" width="80%">
+  <img src="assets/travel_agents.webp" alt="Conseillers" width="80%">
 </p>
 
 ### Onglet Excel
 <p align="center">
-  <img src="assets/excel_window.png" alt="Excel" width="80%">
+  <img src="assets/excel_window.webp" alt="Excel" width="80%">
 </p>
 
-<div style="height: 5px;"></div>
+&nbsp;
 
 ## Pour cloner et démarrer ce projet  
 
