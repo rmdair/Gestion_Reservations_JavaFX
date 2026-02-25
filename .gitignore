@@ -1,0 +1,12 @@
+*.class
+executable.jar
+
+bin/
+.settings/
+.project
+.classpath
+.idea/
+*.iml
+
+.DS_Store
+Thumbs.db

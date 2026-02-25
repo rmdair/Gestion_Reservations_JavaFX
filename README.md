@@ -1,8 +1,12 @@
 <div align="center">
   <h1>Gestion des réservations – Agence de voyage</h1>
+
+![Langage](https://img.shields.io/badge/Langage_-Java_23-d2b48c?style=for-the-badge&logo=openjdk&logoColor=white) 
+![Base de données](https://img.shields.io/badge/Base_de_données-MySQL-00618E?style=for-the-badge&logo=mysql&logoColor=white) 
+![Infrastructure](https://img.shields.io/badge/Conteneur-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 </div>      
 
-&nbsp;
+<div style="height: 5px;"></div>
 
 ## Introduction
 
@@ -13,24 +17,43 @@ L’application repose sur une **base de données MySQL relationnelle** et offre
 - **Les conseillers** gèrent uniquement les clients et leurs réservations.  
 - **L’administration** gère les vols, les compagnies aériennes et les conseillers.
 
+<div style="height: 5px;"></div>
+
+## Téléchargement
+
+Vous pouvez télécharger la version stable prête à l'emploi ici :
+
+<p align="center">
+  <a href="https://github.com/rmdair/Gestion_Reservations_JavaFX/releases/tag/v1.0.0">
+    <img src="https://img.shields.io/badge/VOIR_LA_VERSION_V1.0.0-34495e?style=for-the-badge" alt="Version 1.0.0">
+  </a>
+</p>
+
+<div style="height: 5px;"></div>
+
 ## Modèle conceptuel de données (MCD)
 
 Voici la structure des principales entités du projet :
 
-![MCD](Modele_Conceptuel_Donnees.png)
+<p align="center">
+  <img src="docs/Modele_Conceptuel_Donnees.png" alt="MCD" width="80%">
+</p>
 
 Les réservations constituent l'élément central du modèle. 
-Chaque réservation est associée à un client qui l'effectue, à un conseiller qui la gère, ainsi qu’à un vol correspondant.
+Chacune d'entre elles est associée au client qui l'effectue, au conseiller qui la gère, ainsi qu’au vol correspondant.
+
+<div style="height: 5px;"></div>
 
 ## Fonctionnalités
 
 Les conseillers peuvent :  
-- **Ajouter, modifier ou annuler une réservation** pour un client  
-- **Consulter les vols disponibles** et les compagnies opératrices  
-- **Accéder à une vue globale des réservations** au format Excel  
-- **Gérer les clients** et suivre leur historique de voyage  
+- Ajouter, modifier ou annuler une réservation pour un client  
+- Consulter les vols disponibles et les compagnies opératrices  
+- Accéder à une vue globale des réservations au format Excel  
+- Gérer les clients et suivre leur historique de voyage  
 
----
+<div style="height: 5px;"></div>
+
 
 ## 📂 Arborescence du projet 
 
@@ -63,11 +86,9 @@ src/                   → Code source du projet
 │   ├── ReservationFX.java
 │   ├── ExcelViewFX.java
 │   ├── Main.java      → Classe principale
-
-executable.jar         → Fichier exécutable pour lancer l'application
 ```
 
----
+<div style="height: 5px;"></div>
 
 ## Commandes Docker
 
@@ -90,7 +111,7 @@ docker exec -it project_travel_agency mysql -u root -p
 docker-compose down
 ```
 
----
+<div style="height: 5px;"></div>
 
 ## 🖥️ Lancer l'interface JavaFX
 
@@ -111,42 +132,58 @@ L'application peut également être exécutée en dehors de l'IDE avec la comman
 java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
 ```
 
----
+<div style="height: 5px;"></div>
 
 ## 📖 Documentation
 Deux rapports détaillés du projet sont disponibles :  
 
-**Version française** : [Lire le rapport en français](rapport_gestion_reservations.pdf)  
-**Version anglaise** : [Read the report in English](English_version/reservations_management_report.pdf)  
+**Version française** : [Lire le rapport en français](docs/rapport_gestion_reservations.pdf)  
+**Version anglaise** : [Read the report in English](English_version/docs/reservations_management_report.pdf)  
 
----
+<div style="height: 5px;"></div>
 
 ## 📸 Aperçu de l'application
 
-### Interface d'accueil  
-![Accueil](pictures/update_client.png)
+### Interface d'accueil
+<p align="center">
+  <img src="assets/update_client.png" alt="Accueil" width="80%">
+</p>
 
-### Onglet des réservations  
-![Réservations](pictures/update_reservation.png)
+### Onglet des réservations
+<p align="center">
+  <img src="assets/update_reservation.png" alt="Réservations" width="80%">
+</p>
 
-### Onglet des vols  
-![Vols](pictures/flights.png)
+### Onglet des vols
+<p align="center">
+  <img src="assets/flights.png" alt="Vols" width="80%">
+</p>
 
-### Onglet des compagnies aériennes  
-![Compagnies](pictures/airlines.png)
+### Onglet des compagnies aériennes
+<p align="center">
+  <img src="assets/airlines.png" alt="Compagnies" width="80%">
+</p>
 
-### Onglet des conseillers  
-![Conseillers](pictures/travel_agents.png)
+### Onglet des conseillers
+<p align="center">
+  <img src="assets/travel_agents.png" alt="Conseillers" width="80%">
+</p>
 
-### Onglet Excel  
-![Excel](pictures/excel_window.png)
+### Onglet Excel
+<p align="center">
+  <img src="assets/excel_window.png" alt="Excel" width="80%">
+</p>
 
----
+<div style="height: 5px;"></div>
 
+## Pour cloner et démarrer ce projet  
 
-**Pour cloner et démarrer ce projet**  
 ```bash
 git clone https://github.com/rmdair/Gestion_Reservations_JavaFX.git
 
 cd Gestion_Reservations_JavaFX
+
+# Lancer l'application (vérifiez que le chemin du SDK JavaFX est correct)
+java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
 ```
+

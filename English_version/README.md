@@ -1,41 +1,65 @@
 <div align="center">
-  <h1> Travel Agency Reservation Management</h1>
+  <h1>Booking Management – Travel Agency</h1>
+
+![Language](https://img.shields.io/badge/Language-Java_23-d2b48c?style=for-the-badge&logo=openjdk&logoColor=white) 
+![Database](https://img.shields.io/badge/Database-MySQL-00618E?style=for-the-badge&logo=mysql&logoColor=white) 
+![Infrastructure](https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 </div>
+
+<div style="height: 5px;"></div>
 
 ## Overview
 
 This JavaFX application is designed as **a dedicated workspace for travel agency staff**.  
-It allows them to easily manage client reservations while accessing pre-filled flight and airline information, which is updated by the administration.  
+It allows them to easily manage client bookings while accessing pre-filled flight and airline information, which is updated by the administration.  
 
 The application is based on a **MySQL database** and offers different levels of access:  
-- **Travel agents** manage clients and their reservations only.  
-- **The administration** controls flights, airlines, and agency personnel.  
+- **Travel consultants** manage clients and their bookings only.  
+- **The administration** manages flights, airlines, and agency staff.  
+
+<div style="height: 5px;"></div>
+
+## Download
+
+You can download the stable, ready-to-use version here:
+
+<p align="center">
+  <a href="https://github.com/rmdair/Gestion_Reservations_JavaFX/releases/tag/v1.0.0">
+    <img src="https://img.shields.io/badge/VIEW_RELEASE_V1.0.0-34495e?style=for-the-badge" alt="Version 1.0.0">
+  </a>
+</p>
+
+<div style="height: 5px;"></div>
 
 ## Conceptual Data Model (CDM)
 
 Here is the structure of the project's main entities:
 
-![CDM](Conceptual_Data_Model.png)
+<p align="center">
+  <img src="docs/Conceptual_Data_Model.png" alt="CDM" width="80%">
+</p>
 
-Reservations are the central element of the model, linked to clients, travel agents, and flights via foreign keys.  
-Each reservation is associated with a client who books it, a travel agent who manages it, and a corresponding flight.
+Bookings are the central element of the model.  
+Each of them is associated with the client who makes the booking, the travel consultant who manages it, and the corresponding flight.
+
+<div style="height: 5px;"></div>
 
 ## Features
 
-Travel agents can:  
-- Add, modify, or cancel a client's reservation.  
+Travel consultants can:  
+- Add, modify, or cancel a client's booking.  
 - View available flights and operating airlines.  
-- Access a global view of reservations in Excel format.  
+- Access a consolidated view of bookings in Excel format.  
 - Manage clients and track their travel history.  
 
----
+<div style="height: 5px;"></div>
 
 ## 📂 Project Structure
 
 ```plaintext
 docker/                 → MySQL container configuration
 ├── docker-compose.yml  → Database deployment
-├── initialization.sql  → Fictitious SQL initialization script for testing
+├── initialization.sql  → Sample SQL initialization script for testing
 
 src/                    → Project source code
 ├── config/             → MySQL connection management
@@ -60,12 +84,10 @@ src/                    → Project source code
 │   ├── FlightFX.java
 │   ├── ReservationFX.java
 │   ├── ExcelViewFX.java
-│   ├── Main.java       → Main application class
-
-executable.jar          → Executable file to launch the application
+│   ├── Main.java       → Main application entry point
 ```
 
----
+<div style="height: 5px;"></div>
 
 ## Docker Commands
 
@@ -88,15 +110,13 @@ docker exec -it project_travel_agency mysql -u root -p
 ```bash
 docker-compose down
 ```
-
----
-
+<div style="height: 5px;"></div>
 
 ## 🖥️ Launching the JavaFX Interface
 
 ### Running from Eclipse  
 **Eclipse IDE** is a powerful and widely used integrated development environment for Java programming.
-The graphical interface can be launched directly from Eclipse, which is practical if one wants to develop the application's code:  
+The graphical interface can be launched directly from Eclipse, which is ideal to develop the application's code:  
 
 1. **Create a new Java project in Eclipse**
     
@@ -112,7 +132,10 @@ The graphical interface can be launched directly from Eclipse, which is practica
 
 4. **Select `Main.java` in the `fx` package**  
 
-5. **Click "Run"** to launch the application  
+5. **Click Run** to launch the application  
+
+<div style="height: 5px;"></div>
+
 
 ### Running from the Terminal  
 The application can also be executed outside the IDE using the following command:  
@@ -120,46 +143,61 @@ The application can also be executed outside the IDE using the following command
 java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
 ```
 
----
+<div style="height: 5px;"></div>
+
 
 ## 📖 Documentation
 One detailed report about the project is available:
 
-**French Version** : [Lire le rapport en français](../rapport_gestion_reservations.pdf)  
-**English Version** : [Read the report in English](reservations_management_report.pdf)  
+**English Version** : [Read the report in English](docs/reservations_management_report.pdf)  
+**French Version** : [Lire le rapport en français](../docs/rapport_gestion_reservations.pdf)  
 
----
+
+<div style="height: 5px;"></div>
+
 
 ## 📸 Application Overview
 
 ### Clients Tab
-![Accueil](../pictures/update_client.png)
+<p align="center">
+  <img src="../assets/update_client.png" alt="Clients Tab" width="80%">
+</p>
 
-### Reservations Tab  
-![Réservations](../pictures/update_reservation.png)
+### Bookings Tab
+<p align="center">
+  <img src="../assets/update_reservation.png" alt="Bookings Tab" width="80%">
+</p>
 
-### Flights Tab 
-![Vols](../pictures/flights.png)
+### Flights Tab
+<p align="center">
+  <img src="../assets/flights.png" alt="Flights Tab" width="80%">
+</p>
 
-### Airlines Tab  
-![Compagnies](../pictures/airlines.png)
+### Airlines Tab
+<p align="center">
+  <img src="../assets/airlines.png" alt="Airlines Tab" width="80%">
+</p>
 
-### Travel Agents Tab  
-![Conseillers](../pictures/travel_agents.png)
+### Travel Consultants Tab
+<p align="center">
+  <img src="../assets/travel_agents.png" alt="Travel Consultants Tab" width="80%">
+</p>
 
-### Excel Overview  
-![Excel](../pictures/excel_window.png)
+### Excel Overview
+<p align="center">
+  <img src="../assets/excel_window.png" alt="Excel Overview" width="80%">
+</p>
 
----
+<div style="height: 5px;"></div>
 
 
-**Clone and Run the Project**  
+## Clone and Launch the project
+
 ```bash
 git clone https://github.com/rmdair/Gestion_Reservations_JavaFX.git
-```
-```bash
+
 cd Gestion_Reservations_JavaFX
-```
-```bash
+
+# Run the application (ensure JavaFX SDK path is correct)
 java -p "javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar executable.jar
 ```
